@@ -7,9 +7,9 @@ body {
     font-family: 'inter', sans-serif;
 }
 /* Hindari overflow horizontal */
-.container {
+/* .container {
     overflow:hidden;
-}
+} */
 
 .navbar-fixed{
     @apply fixed z-[9999] bg-white bg-opacity-60 dark:bg-dark dark:bg-opacity-50;
@@ -18,19 +18,20 @@ body {
 }
 .burger-line {
     @apply w-[30px] h-[2px] my-2 block bg-dark dark:bg-white;
-}
-
-
-.burger-aktif>span:nth-child(1) {
-    @apply  rotate-45;
-}
-.burger-aktif>span:nth-child(2) {
-    @apply scale-0;
-}
-
-.burger-aktif>span:nth-child(3) {
-    @apply  -rotate-45;
-}
+  }
+  
+  .burger-aktif>span:nth-child(1) {
+    @apply rotate-45; /* Rotasi span pertama */
+  }
+  
+  .burger-aktif>span:nth-child(2) {
+    @apply scale-0; /* Hilangkan span kedua */
+  }
+  
+  .burger-aktif>span:nth-child(3) {
+    @apply -rotate-45; /* Rotasi span ketiga */
+  }
+  
 
 #footer {
     --s: 50px;
@@ -54,3 +55,6 @@ body {
 }
 
 /* npx tailwindcss -i ./input.css -o ./output.css --watch */
+
+
+

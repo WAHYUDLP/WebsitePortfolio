@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Cryptocurrency</title>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var navbar = document.querySelector('.navbar');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.style.backgroundColor = "rgba(23, 37, 84, 0.7)"; // Transparan biru
+            } else {
+                navbar.style.backgroundColor = "rgb(23, 37, 84)"; // Warna navbar asli
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Style */
+        .navbar {
+            background-color: rgb(23 37 84);
+            /* Slate-400 background for navbar */
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            /* Menambahkan efek blur */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #0037ff;
+            /* Change text color to blue on hover */
+        }
+
+        /* Main Content */
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bg-light-gray {
+            background-color: #f0f0f0;
+            /* Light gray background */
+        }
+
+        .text-primary {
+            color: #007bff;
+        }
+
+        .text-dark {
+            color: #333;
+        }
+
+        .text-white {
+            color: #000000;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .pt-36 {
+            padding-top: 4rem;
+        }
+
+        .pb-32 {
+            padding-bottom: 4rem;
+        }
+
+        .px-4 {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+        }
+
+        .max-w-4xl {
+            max-width: 50rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .rounded-xl {
+            border-radius: 1rem;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        .py-6 {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .px-6 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .mb-10 {
+            margin-bottom: 1rem;
+        }
+
+        .lg\:text-5xl {
+            font-size: 3rem;
+        }
+
+        .lg\:text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .btn-back {
+            margin-left: -20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: left;
+            /* Pastikan judul rata kiri */
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        /* Menambahkan efek blur pada konten ketika scroll */
+        .content-blur {
+            backdrop-filter: blur(5px);
+            /* Efek blur */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html#blog" class="btn btn-back">
+            << Back</a>
+
+    </nav>
+
+    <!-- Blog Post Page - blog1.html -->
+    <section class="pt-20 pb-20">
+        <div class="contain content-blur">
+            <div class="w-full px-4">
+                <div class="max-w-4xl mb-16 mt-4">
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-left">Inovasi Pengenaan
+                        Pajak Lingkungan dengan Teknologi IoT Berbasis Blockchain</h2>
+                    <p class="font-medium lg: text-md text-gray-600 md:text-lg mt-0 mb-3 text-left">
+                        By: <span class="font-semibold" style="color: rgb(104, 103, 103);">Wahyu Dwi Laksana
+                            Putri</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Content of the Blog -->
+            <div class="w-full px-1 ">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <!-- <img src="https://source.unsplash.com/360x200?cryptocurrency" alt="Cryptocurrency" class="w-full"> -->
+                    <div class="py-6 px-6">
+                        <p class="text-dark mb-4 ">Dengan populasi yang terus meningkat dan aktivitas industri yang
+                            berkembang pesat, Indonesia menghadapi tantangan besar dalam mengurangi emisi gas karbon
+                            dioksida (CO2). Menurut data terbaru, total emisi gas CO2 dari sektor industri di Indonesia
+                            pada tahun 2022 mencapai 238,1 juta ton CO2e. Angka ini menunjukkan peningkatan yang
+                            signifikan dibandingkan tahun sebelumnya. Hal ini mendorong perlunya langkah-langkah
+                            inovatif untuk mengurangi dampak negatif terhadap lingkungan.</p>
+                        <p class="text-dark mb-4 font-semibold">Solusi: Teknologi IoT Berbasis Blockchain
+                        </p>
+
+                        <p class="text-dark mb-4">Salah satu inovasi yang menawarkan solusi efektif adalah penerapan
+                            teknologi Internet of Things (IoT) berbasis blockchain. Teknologi ini memungkinkan
+                            pengukuran emisi gas CO2 secara real-time menggunakan sensor IoT yang dipasang di cerobong
+                            asap industri. Data yang dikumpulkan tidak hanya memberikan informasi transparan mengenai
+                            tingkat emisi tetapi juga memastikan integritas dan keamanannya melalui blockchain</p>
+                        <p class="text-dark mb-4 font-semibold">Cara Kerja Sistem </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Pengumpulan Data dengan Sensor IoT:
+                                Sensor Non-Dispersive Infrared (NDIR) mendeteksi kadar CO2 secara akurat dan mengirimkan
+                                data ke mikrokontroler seperti Arduino atau Raspberry Pi. </li>
+                            <li>Pengolahan Data di Server:
+                                Data yang dikumpulkan dikirim melalui protokol MQTT ke server cloud untuk dianalisis dan
+                                ditampilkan melalui aplikasi pengguna.</li>
+                            <li>Integrasi dengan Blockchain:
+                                Data emisi harian dicatat ke dalam blockchain sebagai blok yang tidak dapat diubah. Ini
+                                memastikan transparansi dan mencegah manipulasi data.</li>
+                            <li>Pelaporan ke Direktorat Jenderal Pajak (DJP):
+                                Blockchain memungkinkan pihak terkait, termasuk DJP, untuk memantau data secara
+                                real-time dan menentukan pajak karbon berdasarkan emisi yang dihasilkan.
+                            </li>
+                        </ol>
+
+                        <p class="text-dark mb-4 font-semibold">Manfaat Sistem </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Transparansi Data:
+                                Dengan blockchain, data emisi dapat diakses oleh semua pihak yang berkepentingan,
+                                meningkatkan kepercayaan publik terhadap kebijakan lingkungan. </li>
+                            <li>Efisiensi dan Akurasi:
+                                IoT memungkinkan pengukuran emisi secara real-time, mengidentifikasi penyimpangan, dan
+                                memberikan respons cepat untuk mengurangi dampak lingkungan.</li>
+                            <li>Dorongan untuk Industri Hijau:
+                                Dengan pengenaan pajak berdasarkan data emisi yang akurat, industri akan terdorong untuk
+                                mengadopsi praktik yang lebih ramah lingkungan guna mengurangi beban pajak.</li>
+                        </ol>
+
+                        <p class="text-dark mb-4 font-semibold">Tantangan dan Saran
+
+
+                        </p>
+                        <p class="text-dark mb-4">Meskipun menjanjikan, penerapan teknologi ini memerlukan kolaborasi
+                            multi-pihak dan investasi infrastruktur yang signifikan. Berikut adalah langkah-langkah yang
+                            disarankan:</p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Sosialisasi dan Pelatihan:
+                                Edukasi bagi pelaku industri dan masyarakat mengenai manfaat teknologi IoT dan
+                                blockchain dalam pengelolaan emisi.
+
+                            </li>
+                            <li>Kerja Sama Multi-Pihak:
+                                Pemerintah dapat menggandeng Asosiasi Blockchain Indonesia untuk penelitian dan
+                                implementasi teknologi ini.</li>
+                            <li>Pengembangan Infrastruktur:
+                                Investasi dalam infrastruktur IoT dan blockchain harus menjadi prioritas untuk
+                                keberlanjutan sistem..</li>
+                        </ol>
+
+
+                        <p class="text-dark mb-4 font-semibold">Kesimpulan
+                        </p>
+                        <p class="text-dark mb-4">Inovasi dalam pengenaan pajak lingkungan dengan memanfaatkan teknologi
+                            IoT berbasis blockchain adalah langkah strategis yang dapat mendorong pembangunan industri
+                            hijau di Indonesia. Teknologi ini tidak hanya membantu mengurangi emisi CO2 tetapi juga
+                            meningkatkan efisiensi, akurasi, dan transparansi dalam pengelolaan pajak lingkungan. Dengan
+                            komitmen yang kuat dari semua pihak, Indonesia dapat memimpin dalam mengadopsi solusi
+                            teknologi untuk pembangunan berkelanjutan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

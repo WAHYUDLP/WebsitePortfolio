@@ -13,87 +13,77 @@
         } else {
             document.documentElement.classList.remove('dark')
         }
+
     </script>
+
 </head>
 
 <body>
-
-
     <!-- Header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center 
-    z-10">
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center   z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
                 <div class="px-4">
                     <a href="#home" class="font-bold text-primary text-lg block py-6  dark:text-white
                  ">Wahyu Dwi Laksana Putri</a>
                 </div>
-
                 <div class="flex items-center px-4">
-                    <button id="burger" name="burger" type="button" class="block absolute right-4 lg:hidden">
-                        <span class="burger-line transition duration-300 ease-in-out origin-top-left"> </span>
-                        <span class="burger-line transition duration-300 ease-in-out"> </span>
-                        <span class="burger-line transition duration-300 ease-in-out origin-bottom-left"> </span>
-                        <!-- <span class="burger-line">   </span> -->
+                    <button id="burger" name="burger" type="button" class="absolute right-4 block lg:hidden">
+                        <span class="burger-line origin-top-left transition duration-300 ease-in-out"></span>
+                        <span class="burger-line transition duration-300 ease-in-out"></span>
+                        <span class="burger-line origin-bottom-left transition duration-300 ease-in-out"></span>
                     </button>
 
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white
-                     shadow-lg rounded-lg max-w-[250px] w-full 
-                     right-4 top-full lg:block lg:static lg:bg-transparent 
-                     lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark dark:shadow-slate-300 lg:dark:bg-transparent
-                     ">
+                    <nav id="nav-menu"
+                        class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark dark:shadow-slate-500 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none lg:dark:bg-transparent">
                         <ul class="block lg:flex">
                             <li class="group">
                                 <a href="#home"
-                                    class="text-base text-dark  dark:text-white py-2 mx-8 flex group-hover:text-primary">Home</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Home</a>
                             </li>
                             <li class="group">
                                 <a href="#about"
-                                    class="text-base text-dark  dark:text-white  py-2 mx-8 flex group-hover:text-primary">About
-                                    me</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">About
+                                    Me</a>
                             </li>
-                            <li class="group">
-                                <a href="#clients"
-                                    class="text-base text-dark dark:text-white  py-2 mx-8 flex group-hover:text-primary">Educational
-                                    &
-                                    Experience</a>
+                            <a href="#education"
+                                class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Educational</a>
                             </li>
                             <li class="group">
                                 <a href="#portfolio"
-                                    class="text-base text-dark dark:text-white  py-2 mx-8 flex group-hover:text-primary">Portfolio</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Portfolio</a>
                             </li>
+                            <li class="group">
 
                             <li class="group">
                                 <a href="#blog"
-                                    class="text-base text-dark dark:text-white  py-2 mx-8 flex group-hover:text-primary">Blog</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Blog</a>
                             </li>
                             <li class="group">
                                 <a href="#contact"
-                                    class="text-base text-dark dark:text-white  py-2 mx-8 flex group-hover:text-primary">Contact</a>
+                                    class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contacts</a>
                             </li>
-                            <li class="flex items-center pl-8 mt-0">
+                            <li class="mt-3 flex items-center pl-8 lg:mt-0">
                                 <div class="flex">
-                                    <span class="mr-2 text-dark text-base dark:text-white">Light</span>
+                                    <span class="mr-2 text-sm text-slate-500">light</span>
                                     <input type="checkbox" class="hidden" id="dark-toggle" />
                                     <label for="dark-toggle">
                                         <div
                                             class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
                                             <div
-                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out ">
-
+                                                class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out">
                                             </div>
                                         </div>
                                     </label>
-                                    <span class="ml-2 text-dark text-base  dark:text-white">Dark</span>
+                                    <span class="ml-2 text-sm text-slate-500">dark</span>
                                 </div>
                             </li>
                         </ul>
                     </nav>
+
                 </div>
             </div>
         </div>
-
-
     </header>
     <!-- Header end -->
 
@@ -112,11 +102,11 @@
                     <p class="font-medium text-dark mb-10 leading-relaxed  dark:text-white">“Live as if you were to die
                         tomorrow. Learn
                         as if you were to live forever.”</p>
-                        <a href="#contact"                  
+                    <a href="#contact"
                         class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact
                         me</a>
                     <a href="https://drive.google.com/file/d/1dect3vnhKzagMPPdwBbNty7eIOnG3oHW/view?usp=sharing"
-                       target="_blank"
+                        target="_blank"
                         class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">My
                         CV</a>
                 </div>
@@ -154,9 +144,9 @@
                     <!-- <h3 class="font-bold text-dark text-3xl max-w-xl lg:text-4xl">Lorem ipsum dolor sit.</h3> -->
                     <p class="text-dark dark:text-white  mb-2 lg:text-lg"> I am Wahyu Dwi Laksana Putri, everyone
                         usually call me Wahyu.
-                        I am a first year student in the Informatics Engineering study program, Faculty of Computer
-                        Science, Brawijaya University. Currently I have an interest in the world of IT, especially in
-                        the field of Front-end development.</p>
+                        I am a fourth semester student in the Informatics Engineering study program, Faculty of Computer
+                        Science, Brawijaya University. Currently I have an interest in the IT world, in the field of web
+                        development and data science</p>
                 </div>
 
                 <div class="w-full px-4 mb-10 lg:w-1/2">
@@ -225,7 +215,7 @@
     <!-- About setion end -->
 
     <!-- Educational section Start -->
-    <section id="clients" class="bg-dark  pt-36 pb-32 dark:bg-slate-800">
+    <section id="education" class="bg-dark  pt-36 pb-32 dark:bg-slate-800">
         <div class="container">
 
             <div class="flex flex-wrap">
@@ -334,121 +324,178 @@
     <!-- Portofolio section end -->
 
     <!-- Blog start -->
-    <section id="blog" class="pt-36 pb-32 bg-white dark:bg-dark">
+    <!-- Blog start -->
+    <section id="blog" class="pt-36 pb-32 bg-slate-200 dark:bg-dark">
         <div class="contain">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16 mt-8">
-                    <h3 class="font-semibold text-lg text-primary mb-2 dark:text-white lg:text-2xl ">BLOG</h3>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl  dark:text-white">Latest Post
+                    <h3 class="font-semibold text-lg text-primary mb-2 dark:text-white lg:text-2xl">BLOG</h3>
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Latest Post
                     </h2>
-                    <p class="font-medium text-md text-dark md:text-lg  dark:text-white">Lorem ipsum dolor sit amet
-                        consectetur,
-                        adipisicing elit. Iste est odit ut?</p>
+                    <p class="font-medium text-md text-dark md:text-lg dark:text-white">
+                        Get the latest insights on tech topics, crypto investments, and tips to maximize your digital experience.                    </p>
                 </div>
             </div>
 
-
             <div class="flex flex-wrap">
+                <!-- Blog Post 1 -->
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
+                        <!-- <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full"> -->
                         <div class="py-8 px-6">
-                            <a href="#"
-                                class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate  ">Cryptocurrency</a>
-                            <p class="text-dark mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perferendis, deleniti.</p>
-                            <a href="#"
-                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80  dark:text-white">Baca
-                                selengkapnya </a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
-                        <div class="py-8 px-6">
-                            <a href="#"
-                                class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate  ">Proof
-                                of
-                                Stake</a>
-                            <p class="text-dark mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perferendis, deleniti.</p>
-                            <a href="#"
-                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80  dark:text-white">Baca
-                                selengkapnya </a>
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img src="https://source.unsplash.com/360x200?programming" alt="" class="w-full">
-                        <div class="py-8 px-6">
-                            <a href="#"
-                                class="  block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
-                                Blockchain</a>
-                            <p class="text-dark mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Perferendis, deleniti.</p>
-                            <a href="#"
-                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca
-                                selengkapnya </a>
-
+                            <a href="blog1.html"
+                                class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                                Menyelami Keamanan Blockchain: Kunci Investasi Aman di Era Cryptocurrency
+                            </a>
+                            <p class="text-dark mb-4">
+                                Era digital telah membawa berbagai inovasi, salah satunya adalah cryptocurrency. Bagi
+                                generasi Z,
+                                yang tumbuh dengan teknologi, investasi crypto bukan hanya peluang finansial tetapi juga
+                                simbol dari
+                                gaya hidup modern yang terhubung. Namun, di balik kemudahan dan fleksibilitasnya,
+                                terdapat tantangan besar: keamanan.
+                            </p>
+                            <a href="blog1.html"
+                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:shadow-lg hover:opacity-80 dark:text-white">
+                                Baca selengkapnya
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                <!-- Blog Post 2 -->
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <!-- <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full"> -->
+                        <div class="py-8 px-6">
+                            <a href="blog2.html"
+                                class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                                Inovasi Pengenaan Pajak Lingkungan dengan Teknologi IoT Berbasis Blockchain
+                            </a>
+                            <p class="text-dark mb-4">
+                                Dengan populasi yang terus meningkat dan aktivitas industri yang berkembang pesat,
+                                Indonesia menghadapi tantangan besar dalam mengurangi emisi gas karbon dioksida (CO2).
+                                Menurut data terbaru, total emisi gas CO2 dari sektor industri di Indonesia pada tahun
+                                2022 mencapai 238,1 juta ton CO2e. Angka ini menunjukkan peningkatan yang signifikan
+                                dibandingkan tahun sebelumnya.
+                            </p>
+                            <a href="blog2.html"
+                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:shadow-lg hover:opacity-80 dark:text-white">
+                                Baca selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                        <!-- <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full"> -->
+                        <div class="py-8 px-6">
+                            <a href="blog3.html"
+                                class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate">
+                                Quantum Computing
+                            </a>
+                            <p class="text-dark mb-4">
+                                Quantum computing adalah jenis komputasi yang menggunakan prinsip mekanika kuantum,
+                                seperti superposisi dan keterikatan kuantum, untuk memproses informasi. Tidak seperti
+                                komputer klasik yang menggunakan bit (0 atau 1), komputer kuantum menggunakan qubit yang
+                                bisa berada dalam banyak keadaan sekaligus, memberikan kekuatan komputasi jauh lebih
+                                besar. </p>
+                            <a href="blog3.html"
+                                class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:shadow-lg hover:opacity-80">
+                                Baca selengkapnya
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- Blog end -->
+
+
     <!-- Blog end -->
 
     <!-- Contact sectcion start -->
-    <section id="contact" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16 mt-8">
-                    <h3 class="font-semibold text-lg text-primary mb-2 dark:text-white lg:text-2xl ">CONTACT</h3>
-                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">Contact me
-                    </h2>
-                    <p class="font-medium text-md text-dark md:text-lg  dark:text-white">Hanya portfolio Lorem, ipsum
-                        dolor sit amet
-                        consectetur
-                        adipisicing elit. Reprehenerit quisquam veritatis culpa ea sit expedita eos
-                        possimus
-                        accusantium? Cumque, ex.c</p>
-                </div>
-            </div>
-
-            <form>
-                <div class="w-full lg:w-2/3 lg:mx-auto">
-                    <div class="w-full px-4 mb-8 ">
-                        <label for="name" class="text-primary font-bold dark:text-white">Name</label>
-                        <input type="text" id="name" class="w-full bg-slate-200 text-dark px-3 rounded-md
-                     focus: outline-none focus:ring-primary focus:ring-1 focus:border-primary" placeholder="wahyu" />
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="email" class="text-primary font-bold dark:text-white">Email</label>
-                        <input type="text" id="email" class="w-full bg-slate-200 text-dark px-3 rounded-md
-                     focus: outline-none focus:ring-primary focus:ring-1 focus:border-primary "
-                            placeholder="example@gmail.com" />
-                    </div>
-                    <div class="w-full px-4 mb-8">
-                        <label for="message" class="text-primary font-bold dark:text-white">Messagge</label>
-                        <textarea type="text" id="message" class="w-full bg-slate-200 text-dark px-3 rounded-md
-                     focus: outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
-                            placeholder="lorem , ipsum dolor sit amet consectetur adipisicing elit. Reprehenerit quisquam veritatis culpa ea sit expedita eos"></textarea>
-                    </div>
-                    <div class="w-full px-4">
-                        <button class="text-base font-semibold text-white bg-primary py-3
-                    px-10 rounded-full transition duration-500  hover:opacity-80 hover:shadow-lg">Send</button>
-                    </div>
-                </div>
-            </form>
+    <section id="contact" class="bg-slate-400">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2 style="font-size: 32px; font-weight: bold; color: #333; margin-bottom: 20px; margin-top: 50px;">Contact
+                Me</h2>
+            <p style="font-size: 18px; color: #555; max-width: 600px; margin: 0 auto;">Feel free to reach out if you
+                have any questions, comments, or simply want to say hello! I'm always happy to hear from you and will
+                get back to you as soon as possible.</p>
         </div>
+
+        <form action="https://formspree.io/f/mnnnovoy" method="POST"
+            style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-bottom: 50px;">
+            <!-- First Name -->
+            <label for="first-name"
+                style="font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; display: block;">First
+                name:</label>
+            <input type="text" name="first-name" id="first-name" required placeholder="x"
+                style="width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; color: #333; background-color: #fff;">
+
+            <!-- Last Name -->
+            <label for="last-name"
+                style="font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; display: block;">Last
+                name:</label>
+            <input type="text" name="last-name" id="last-name" required placeholder="x"
+                style="width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; color: #333; background-color: #fff;">
+
+            <!-- Email -->
+            <label for="email"
+                style="font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; display: block;">Your
+                email:</label>
+            <input type="email" name="email" id="email" required placeholder="example@gmail.com"
+                style="width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; color: #333; background-color: #fff;">
+
+            <!-- Phone Number -->
+            <label for="phone-number"
+                style="font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; display: block;">Phone
+                number:</label>
+            <input type="text" name="phone-number" id="phone-number" placeholder="123-456-7890"
+                style="width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; color: #333; background-color: #fff;">
+
+            <!-- Message -->
+            <label for="message"
+                style="font-size: 14px; font-weight: 600; color: #333; margin-bottom: 8px; display: block;">Your
+                message:</label>
+            <textarea name="message" id="message" required placeholder="Hi"
+                style="width: 100%; padding: 12px; margin-bottom: 20px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; color: #333; background-color: #fff; resize: vertical;"></textarea>
+
+
+            <!-- Button Section -->
+            <div style="display: flex; justify-content: flex-start; margin-top: 20px; margin-bottom: 20px;">
+                <!-- Reset Button -->
+                <button type="reset"
+                    style="background-color: #ddd; color: #333; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease; margin-right: 10px;">Reset</button>
+                <!-- Submit Button -->
+                <button type="submit"
+                    style="background-color: #1d4ed8; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease;">Send</button>
+            </div>
+        </form>
+
+        <!-- Optional: Script for hover effect -->
+        <script>
+            document.querySelector('button[type="submit"]').addEventListener('mouseover', function () {
+                this.style.backgroundColor = '#172554'
+            });
+            document.querySelector('button[type="submit"]').addEventListener('mouseout', function () {
+                this.style.backgroundColor = '#1d4ed8';
+            });
+
+            document.querySelector('button[type="reset"]').addEventListener('mouseover', function () {
+                this.style.backgroundColor = '#bbb';
+            });
+            document.querySelector('button[type="reset"]').addEventListener('mouseout', function () {
+                this.style.backgroundColor = '#ddd';
+            });
+        </script>
     </section>
+
+
     <!-- Contact section end -->
 
     <!-- Footer start -->
@@ -457,24 +504,11 @@
             <div class="flex flex-warp">
                 <div class="w-full px-4 mb-12 text-slate-100 font-medium md:w-1/3">
                     <h2 class="text-white font-bold mb-5">WDLP</h2>
-                    <h3>Contact me</h3>
-                    <p>Wahyu</p>
-                    <p>Kota Malang</p>
+                    <p>Kota Malang
+                        Jawa Timur
+                    </p>
                 </div>
-                <div class="w-full px-4 mb-12 font-medium md:w-1/3">
-                    <h3 class="font-semibold text-xl text-white">Writing Category</h3>
-                    <ul>
-                        <li>
-                            <a href="#" class="inline-block text-slate-300 hover:text-primary mb-3">Programming</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-slate-300 hover:text-primary mb-3">Programming</a>
-                        </li>
-                        <li>
-                            <a href="#" class="inline-block text-slate-300 hover:text-primary mb-3">Programming</a>
-                        </li>
-                    </ul>
-                </div>
+
                 <div class="w-full px-4 mb-12 font-medium md:w-1/3">
                     <h3 class="font-semibold text-xl text-white">Link</h3>
                     <ul>
@@ -485,7 +519,8 @@
                             <a href="#about" class="inline-block text-slate-300 hover:text-primary mb-3">About me</a>
                         </li>
                         <li>
-                            <a href="#clients" class="inline-block text-slate-300 hover:text-primary mb-3">Educational &
+                            <a href="#education" class="inline-block text-slate-300 hover:text-primary mb-3">Educational
+                                &
                                 Experience </a>
                         </li>
                         <li>
@@ -553,8 +588,7 @@
                         </svg>
                     </a>
                 </div>
-                <p class="font-medium text-m text-slate-500 text-center">Dibuat oleh Wahyu Dwi Laksana Putri menggunakan
-                    Tailwind CSS 3.</p>
+                <p class="font-medium text-m text-slate-500 text-center">@Wahyu Dwi Laksana Putri</p>
             </div>
         </div>
 

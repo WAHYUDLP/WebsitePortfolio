@@ -6,10 +6,7 @@
 body {
     font-family: 'inter', sans-serif;
 }
-/* Hindari overflow horizontal */
-/* .container {
-    overflow:hidden;
-} */
+
 
 .navbar-fixed{
     @apply fixed z-[9999] bg-white bg-opacity-60 dark:bg-dark dark:bg-opacity-50;

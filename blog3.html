@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Blockchain</title>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            var navbar = document.querySelector('.navbar');
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                navbar.style.backgroundColor = "rgba(23, 37, 84, 0.7)"; // Transparan biru
+            } else {
+                navbar.style.backgroundColor = "rgb(23, 37, 84)"; // Warna navbar asli
+            }
+        }
+
+    </script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Style */
+        .navbar {
+            background-color: rgb(23 37 84);
+            /* Slate-400 background for navbar */
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            /* Menambahkan efek blur */
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 500;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #0037ff;
+            /* Change text color to blue on hover */
+        }
+
+        /* Main Content */
+        .contain {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .bg-light-gray {
+            background-color: #f0f0f0;
+            /* Light gray background */
+        }
+
+        .text-primary {
+            color: #007bff;
+        }
+
+        .text-dark {
+            color: #333;
+        }
+
+        .text-white {
+            color: #000000;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        .font-medium {
+            font-weight: 500;
+        }
+
+        .font-semibold {
+            font-weight: 600;
+        }
+
+        .pt-36 {
+            padding-top: 4rem;
+        }
+
+        .pb-32 {
+            padding-bottom: 4rem;
+        }
+
+        .px-4 {
+            padding-left: 0.2rem;
+            padding-right: 0.2rem;
+        }
+
+        .max-w-4xl {
+            max-width: 50rem;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .rounded-xl {
+            border-radius: 1rem;
+        }
+
+        .shadow-lg {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .bg-gray-100 {
+            background-color: #f7fafc;
+        }
+
+        .py-6 {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .px-6 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .mb-10 {
+            margin-bottom: 1rem;
+        }
+
+        .lg\:text-5xl {
+            font-size: 3rem;
+        }
+
+        .lg\:text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .btn-back {
+            margin-left: -20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        h2 {
+            text-align: left;
+            /* Pastikan judul rata kiri */
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        /* Menambahkan efek blur pada konten ketika scroll */
+        .content-blur {
+            backdrop-filter: blur(5px);
+            /* Efek blur */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html#blog" class="btn btn-back">
+            << Back</a>
+
+    </nav>
+
+    <!-- Blog Post Page - blog1.html -->
+    <section class="pt-20 pb-20">
+        <div class="contain content-blur">
+            <div class="w-full px-4">
+                <div class="max-w-4xl mb-16 mt-4">
+                    <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-left">Quantum Computing -
+                        Revolusi Teknologi yang Jarang Dibahas</h2>
+                    <p class="font-medium lg: text-md text-gray-600 md:text-lg mt-0 mb-3 text-left">
+                        By: <span class="font-semibold" style="color: rgb(104, 103, 103);">Wahyu Dwi Laksana
+                            Putri</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Content of the Blog -->
+            <div class="w-full px-1 ">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+                    <!-- <img src="https://source.unsplash.com/360x200?cryptocurrency" alt="Cryptocurrency" class="w-full"> -->
+                    <div class="py-6 px-6">
+                        <p class="font-semibold text-dark mb-2 ">Apa Itu Quantum Computing?</p>
+                        <p class="text-dark mb-4 ">Quantum computing adalah jenis komputasi yang menggunakan prinsip
+                            mekanika kuantum, seperti superposisi dan keterikatan kuantum, untuk memproses informasi.
+                            Tidak seperti komputer klasik yang menggunakan bit (0 atau 1), komputer kuantum menggunakan
+                            qubit yang bisa berada dalam banyak keadaan sekaligus, memberikan kekuatan komputasi jauh
+                            lebih besar.</p>
+                        <p class="text-dark mb-4 font-semibold">Bagaimana Quantum Computing Bekerja?
+                        </p>
+
+
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Superposisi:
+                                Qubit dapat berada dalam kombinasi 0 dan 1 secara bersamaan, memungkinkan penghitungan
+                                paralel yang masif. </li>
+                            <li>Keterikatan (Entanglement):
+                            <li>Integrasi dengan Blockchain:
+                                Data emisi harian dicatat ke dalam blockchain sebagai blok yang tidak dapat diubah. Ini
+                                memastikan transparansi dan mencegah manipulasi data.</li>
+                            <li>Gangguan Kuantum:
+                                Teknologi ini menggunakan gangguan untuk menemukan solusi optimal dengan mengeliminasi
+                                hasil yang tidak diinginkan.
+
+
+                            </li>
+                        </ol>
+
+                        <p class="text-dark mb-4 font-semibold">Mengapa Quantum Computing Penting? </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Kriptografi:
+                                Komputer kuantum dapat memecahkan algoritma enkripsi saat ini dengan cepat, mendorong
+                                pengembangan kriptografi kuantum yang lebih aman.</li>
+                            <li>Riset Farmasi:
+                                Membantu simulasi molekul kompleks untuk menemukan obat baru secara lebih efisien.</li>
+                            <li>Optimisasi:
+                                Mengatasi masalah logistik dan rute yang kompleks dalam waktu singkat.</li>
+                            <li>AI dan Machine Learning:
+                                Mempercepat pelatihan model AI dengan memproses data dalam skala besar.</li>
+                        </ol>
+
+                        <p class="text-dark mb-4 font-semibold">Tantangan Quantum Computing
+
+
+                        </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Stabilitas Qubit:
+                                Qubit sangat sensitif terhadap gangguan eksternal, yang dapat menyebabkan kesalahan
+                                komputasi.
+                            </li>
+                            <li>Infrastruktur:
+                                Komputer kuantum membutuhkan suhu mendekati nol absolut untuk beroperasi, memerlukan
+                                investasi besar pada perangkat keras.</li>
+                            <li>Keamanan Data:
+                                Potensi untuk memecahkan enkripsi saat ini menimbulkan risiko pada keamanan data global.
+                            </li>
+                        </ol>
+
+
+                        <p class="text-dark mb-4 font-semibold">Contoh Aplikasi Nyata
+
+
+                        </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>IBM dan Google:
+                                Kedua perusahaan ini telah membangun komputer kuantum dan mengklaim keunggulan kuantum
+                                untuk tugas tertentu.
+                            </li>
+                            <li>Pemerintah dan Institusi:
+                                Beberapa negara berinvestasi besar dalam penelitian kuantum untuk memperkuat kemampuan
+                                teknologi mereka. Negara yang Berinvestasi Besar:
+                                Amerika Serikat, China, dan Uni Eropa adalah contoh negara yang berinvestasi besar dalam
+                                penelitian quantum computing. China, misalnya, mengalokasikan miliaran dolar untuk
+                                proyek
+                                pembangunan komputer kuantum dan infrastruktur pendukungnya. Uni Eropa memiliki program
+                                Quantum Flagship senilai 1 miliar euro untuk mengembangkan teknologi ini dalam dekade
+                                mendatang.</li>
+
+                        </ol>
+
+                        <p class="text-dark mb-4 font-semibold">Masa Depan Quantum Coputing
+
+
+                        </p>
+                        <ol class="list-decimal list-inside text-dark mb-4">
+                            <li>Kriptografi Kuantum:
+                                Mengembangkan sistem keamanan baru yang tahan terhadap serangan kuantum.
+                            </li>
+                            <li>Penerapan Komersial:
+                                Dalam dekade mendatang, kita mungkin melihat komputer kuantum digunakan secara luas
+                                untuk aplikasi bisnis.</li>
+                            <li>Kolaborasi Global:
+                                Penelitian kuantum membutuhkan kerja sama antara negara dan organisasi untuk mempercepat
+                                kemajuan.
+                            </li>
+                        </ol>
+
+
+                        <p class="text-dark mb-4 font-semibold">Kesimpulan
+                        </p>
+                        <p class="text-dark mb-4">Quantum computing adalah revolusi teknologi yang berpotensi mengubah
+                            dunia. Meskipun masih dalam tahap awal, teknologi ini menjanjikan solusi untuk masalah yang
+                            tidak dapat dipecahkan oleh komputer klasik. Dengan investasi dan penelitian yang terus
+                            berkembang, quantum computing akan menjadi pilar utama dalam kemajuan teknologi masa depan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

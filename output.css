@@ -34,6 +34,51 @@
 6. Use the user's configured `sans` font-variation-settings by default.
 7. Disable tap highlights on iOS
 */
+/* Container untuk slider */
+.swiper-container {
+  position: relative; /* Agar tombol bisa diposisikan secara absolut di dalam container */
+}
+
+/* Perbesar gambar dan pastikan tetap responsif */
+.swiper-slide img {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; /* Memastikan gambar memenuhi seluruh area */
+}
+
+/* Posisi tombol navigasi di tengah */
+.swiper-button-next, .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10; /* Agar tombol berada di atas gambar */
+  background-color: rgba(0, 0, 0, 0.5); /* Background transparan dengan sedikit warna */
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+/* Gaya ketika tombol hover */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Tombol lebih gelap saat hover */
+}
+
+/* Posisi tombol next dan prev */
+.swiper-button-next {
+  right: 10px; /* Posisi tombol next di sisi kanan */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Posisi tombol prev di sisi kiri */
+}
+
+/* Styling pagination (titik) */
+.swiper-pagination-bullet {
+  background: #4f46e5; /* Warna titik */
+}
+
+
 
 html,
 :host {
@@ -66,6 +111,9 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  overflow-x: hidden;
+
+
 }
 
 /*
@@ -569,6 +617,7 @@ video {
     max-width: 1024px;
   }
 }
+
 
 @media (min-width: 1280px) {
   .container {
